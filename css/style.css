@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #263238;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1024px;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+#search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#search input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #4FC3F7;
+    transition: border-color 0.3s;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+#search input:focus {
+    border-color: #4FC3F7;
+    outline: none;
+}
+
+#search button {
+    padding: 13px;
+    border: none;
+    background-color: #4FC3F7;
+    color: white;
+    cursor: pointer;
+    max-width: 50%;
+    transition: background-color 0.3s;
+}
+
+#search button:hover {
+    background-color: #039BE5;
+}
+
+#search button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 121, 107, 0.5);
+}
+
+#weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #fafafa;
+}
+
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-weather p {
+    margin: 5px 0;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+#forecast {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    margin-right: 15px;
+    text-align: center;
+    flex: 1 1 150px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.current-weather p {
+    margin: 5px 0;
+}
+
+#local-time {
+    font-weight: bold;
+}

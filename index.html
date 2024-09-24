@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Aplicativo de previsão do tempo em tempo real">
+    <meta property="og:title" content="Previsão do Tempo">
+    <meta property="og:description" content="Aplicativo de previsão do tempo em tempo real">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Previsão do Tempo</h1>
+        </header>
+        <main>
+            <section id="search">
+                <input type="text" id="location-input" placeholder="Digite uma localidade" aria-label="Localidade">
+                <button id="search-button" aria-label="Buscar previsão do tempo">Buscar</button>
+            </section>
+            <section id="weather-info">
+                <div class="current-weather">
+                    <h2>Localidade: <span id="city-name">--</span></h2>
+                    <p>Temperatura: <span id="temperature">--</span>°C</p>
+                    <p>Condições: <span id="condition">--</span></p>
+                    <p>Horário Local: <span id="local-time">--:--</span></p>
+                    <img id="weather-icon" alt="Ícone do Tempo" src="">
+                </div>
+                <div id="forecast">
+                    <!-- Previsão para os próximos dias será inserida aqui -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Atualizado em tempo real</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
