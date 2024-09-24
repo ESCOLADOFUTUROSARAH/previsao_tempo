@@ -41,6 +41,12 @@ Este é um simples aplicativo de previsão do tempo que utiliza a API do OpenWea
 
 Este projeto utiliza a API do OpenWeatherMap para obter os dados meteorológicos. Para mais informações, consulte a [documentação da API](https://openweathermap.org/api).
 
+## Chave API
+
+A chave API (`apiKey`) fornecida neste projeto é minha chave pessoal, incluída aqui para facilitar o trabalho inicial. Ela foi disponibilizada com fins didáticos, para que vocês possam testar e explorar o funcionamento da aplicação de maneira mais rápida. 
+
+**Importante**: Vocês são convidados a fazer o cadastro gratuito no site [OpenWeatherMap](https://openweathermap.org/) e obter a própria chave API. Usar sua própria chave é uma prática recomendada, especialmente em projetos futuros ou ao disponibilizar a aplicação publicamente.
+
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
