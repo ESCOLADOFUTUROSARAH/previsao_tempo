@@ -84,13 +84,23 @@ function updateLocalTime(timezone) {
     localTime.textContent = cityTime.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
 }
 
-// Adicionando evento ao botão de busca
-searchButton.addEventListener('click', function () {
+// Função para pesquisar a cidade inserida
+function handleSearch() {
     const city = locationInput.value.trim();
     if (city) {
         fetchWeather(city);
     } else {
         showError('Por favor, insira uma localidade.');
+    }
+}
+
+// Evento para o botão de busca
+searchButton.addEventListener('click', handleSearch);
+
+// Evento para buscar ao pressionar "Enter"
+locationInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        handleSearch();
     }
 });
 
